@@ -3,15 +3,17 @@ Combined Landsat and L-band SAR data improves land cover classification and chan
 
 [![DOI](https://img.shields.io/badge/DOI-10.3390%2Frs10020306-blue.svg)](https://doi.org/10.3390/rs10020306)
 
-## Overview
-This repository contains the materials used for my land cover change analysis paper published in [Remote Sensing](http://www.mdpi.com/journal/remotesensing) journal on February 2018. The paper, both the [main paper](http://www.mdpi.com/2072-4292/10/2/306/pdf) and [supplementary material](http://www.mdpi.com/2072-4292/10/2/306#supplementary), is published open-access and can be downloaded for free under a [CC BY 4.0 license](#license). The materials provided in this repository serve to supplement the published paper by creating a backup of the materials used in and developed through the study, to encourage doing better science by fostering reproducibility and transparency, and to improve the overall impact of the research.
 
 ## Table of Contents
+- [Overview](#overview)
 - [Abstract](#abstract)
-- [Study Area](#study_area)
 - [Citation](#citation)
 - [License](#license)
 
+
+<a name="overview"></a>
+## Overview
+This repository contains the materials used for my land cover change analysis paper published in [Remote Sensing](http://www.mdpi.com/journal/remotesensing) journal on February 2018. The paper, both the [main paper](http://www.mdpi.com/2072-4292/10/2/306/pdf) and [supplementary material](http://www.mdpi.com/2072-4292/10/2/306#supplementary), is published open-access and can be downloaded for free under a [CC BY 4.0 license](#license). The materials provided in this repository serve to supplement the published paper by creating a backup of the materials used in and developed through the study, to encourage doing better science by fostering reproducibility and transparency, and to improve the overall impact of the research.
 
 <a name="abstract"></a>
 ## Abstract
