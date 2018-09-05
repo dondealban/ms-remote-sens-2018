@@ -24,17 +24,15 @@ Robust quantitative estimates of land use and land cover change are necessary to
 ## Scripts
 The following scripts were used for implementing image processing, classification, and accuracy assessment processes; for executing functions and statistical tests; and generating figures.
 
+#### Image Statistics
+
 #### Overall Workflow
 The overall workflow figure (Fig.2 in the paper) was designed using the [yEd Graph Editor](https://www.yworks.com/products/yed) software, which uses an XML-based GraphML file format for graphs. The GraphML file used for generating the overall workflow figure is provided.
 
 #### Decision Tree
-Two scripts are provided for the decision tree task. First, the decision tree was generated using the [`tree` package](https://cran.r-project.org/web/packages/tree/index.html) (Ripley 2017) in [R software](https://www.r-project.org) (R Core Team, 2016).
+Two scripts are provided for the decision tree task. First, an R script was developed to generate the decision tree using the [`tree` package](https://cran.r-project.org/web/packages/tree/index.html) (Ripley 2017) in [R software](https://www.r-project.org) (R Core Team, 2016). The R script used a csv data file containing the extracted image values from predictor variable layers for all regions-of-interest (ROI) polygons as input data, and produced tree dendrograms images and summary text files as outputs. Second, based on the tree dendrograms and summary text files, a simplified decision tree flowchart (Fig.S5 in the paper) was designed again using the [yEd Graph Editor](https://www.yworks.com/products/yed) for easily depicting the decision tree process.
 
-The overall workflow (Figure 2 in the paper) was designed using the [yEd Graph Editor](https://www.yworks.com/products/yed) software, which uses an XML-based GraphML file format. The GraphML file used for generating the overall workflow figure is provided.
-
-
-
-
+#### Image Classification
 
 <a name="citation"></a>
 ## Citation
