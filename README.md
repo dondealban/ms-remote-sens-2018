@@ -2,7 +2,7 @@
 Combined Landsat and L-band SAR data improves land cover classification and change detection in dynamic tropical landscapes.
 
 ## Overview
-This repository contains the materials used for my land cover change analysis paper published in Remote Sensing journal on February 2018. The paper is published open-access
+This repository contains the materials used for my land cover change analysis paper published in Remote Sensing journal on February 2018. The paper, including both the [main paper](http://www.mdpi.com/2072-4292/10/2/306/pdf) and [supplementary material](http://www.mdpi.com/2072-4292/10/2/306#supplementary), is published open-access and can be freely downloaded.
 
 
 ## Abstract
