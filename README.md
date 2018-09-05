@@ -8,7 +8,6 @@ Combined Landsat and L-band SAR data improves land cover classification and chan
 - [Overview](#overview)
 - [Abstract](#abstract)
 - [Scripts](#scripts)
-- [Figures](#figures)
 - [Citation](#citation)
 - [License](#license)
 
@@ -25,11 +24,14 @@ Robust quantitative estimates of land use and land cover change are necessary to
 ## Scripts
 The following scripts were used for implementing image processing, classification, and accuracy assessment processes; for executing functions and statistical tests; and generating figures.
 
-#### Figure 2. Overall Workflow
+#### Overall Workflow
+The overall workflow figure (Fig.2 in the paper) was designed using the [yEd Graph Editor](https://www.yworks.com/products/yed) software, which uses an XML-based GraphML file format for graphs. The GraphML file used for generating the overall workflow figure is provided.
 
+#### Decision Tree
+Two scripts are provided for the decision tree task. First, the decision tree was generated using the [`tree` package](https://cran.r-project.org/web/packages/tree/index.html) (Ripley 2017) in [R software](https://www.r-project.org) (R Core Team, 2016).
 
-<a name="figures"></a>
-## Figures
+The overall workflow (Figure 2 in the paper) was designed using the [yEd Graph Editor](https://www.yworks.com/products/yed) software, which uses an XML-based GraphML file format. The GraphML file used for generating the overall workflow figure is provided.
+
 
 
 
