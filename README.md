@@ -30,7 +30,9 @@ The overall workflow figure (Fig.2 in the paper) was designed using the [yEd Gra
 
 <img src="https://github.com/dondealban/ms-remote-sens-2018/blob/master/figures/paper/De%20Alban%20et%20al_2018_Fig02_Workflow.jpg" width="400" />
 
-	- **Scripts:** [yEd graphml](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/yEd/yEd_Workflow.LandsatSAR.graphml) for designing the overall workflow diagram.
+```
+**Scripts:** [yEd graphml](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/yEd/yEd_Workflow.LandsatSAR.graphml) for designing the overall workflow diagram.
+```
 
 #### Extraction of Image Statistics
 Once the image stacks of the combined Landsat and L-band SAR data and the regions-of-interest (ROI) polygons of land cover types were completed, the image values of all predictor variables (all data layers from the image stacks) within the delineated ROI polygons were extracted for backscatter/reflectance analysis. The image statistics were extracted using the [Google Earth Engine](https://earthengine.google.com) (Gorelick et al. 2017) platform and exported as csv files. The csv files were subsequently used as input data to generate box-whisker plots using [`ggplot2` package](https://ggplot2.tidyverse.org) (Wickham 2016) in [R software](https://www.r-project.org) (R Core Team 2016) for the purpose visualising and analysing the distribution of SAR backscatter and Landsat TOA reflectance values for each predictor variable consisting of the image channels/bands, derived indices, and texture measures. Each boxplot showed land cover types (x-axis) against backscatter/reflectance/index values (y-axis) for each predictor variable.
