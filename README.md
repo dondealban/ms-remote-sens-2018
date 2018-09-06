@@ -30,6 +30,8 @@ The overall workflow figure (Fig.2 in the paper) was designed using the [yEd Gra
 
 ![overall-workflow](https://github.com/dondealban/ms-remote-sens-2018/blob/master/figures/paper/De%20Alban%20et%20al_2018_Fig02_Workflow.jpg | width=400)
 
+<img src="https://github.com/dondealban/ms-remote-sens-2018/blob/master/figures/paper/De%20Alban%20et%20al_2018_Fig02_Workflow.jpg" width="400" />
+
 	- Scripts: overall workflow (yEd)
 
 #### Extraction of Image Statistics
