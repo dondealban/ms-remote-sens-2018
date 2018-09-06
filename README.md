@@ -8,6 +8,7 @@ Combined Landsat and L-band SAR data improves land cover classification and chan
 - [Overview](#overview)
 - [Abstract](#abstract)
 - [Scripts](#scripts)
+- [Outputs](#outputs)
 - [Citation](#citation)
 - [License](#license)
 
@@ -30,12 +31,42 @@ The overall workflow figure (Fig.2 in the paper) was designed using the [yEd Gra
 #### Extraction of Image Statistics
 Once the image stacks of the combined Landsat and L-band SAR data and the regions-of-interest (ROI) polygons of land cover types were completed, the image values of all predictor variables (all data layers from the image stacks) within the delineated ROI polygons were extracted for backscatter/reflectance analysis. The image statistics were extracted using the [Google Earth Engine](https://earthengine.google.com) (Gorelick et al. 2017) platform and exported as csv files. The csv files were subsequently used as input data to generate box-whisker plots using [`ggplot2` package](https://ggplot2.tidyverse.org) (Wickham 2016) in [R software](https://www.r-project.org) (R Core Team 2016) for the purpose visualising and analysing the distribution of SAR backscatter and Landsat TOA reflectance values for each predictor variable consisting of the image channels/bands, derived indices, and texture measures. Each boxplot showed land cover types (x-axis) against backscatter/reflectance/index values (y-axis) for each predictor variable.
 
-#### Decision Tree
-Two scripts are provided for the decision tree task. First, an R script was developed to generate the decision tree using the [`tree` package](https://cran.r-project.org/web/packages/tree/index.html) (Ripley 2017) in [R software](https://www.r-project.org) (R Core Team 2016). The R script used the csv file containing the extracted 2015 image values of predictor variable layers for all ROI polygons as input data to produce tree dendrograms images and summary text files as outputs. Second, based on the tree dendrograms and summary text files, a simplified decision tree flowchart (Fig.S5 in the paper) was designed again using the [yEd Graph Editor](https://www.yworks.com/products/yed) for easily depicting the decision tree with the predictor variable and corresponding thresholds for discriminating selected land cover types.
+	- Scripts: export csv files with image statistics (GEE)
+
+#### Decision Tree and Mask Generation
+To aid in the delineation of ROIs to classify the 1995 image stack, binary mask layers were needed for two land cover types: oil palm and rubber. The mask layers for these two land cover types were generated--first through a visual evaluation of the boxplots to select predictor variables in which the two land cover types could be discriminated, and second by implementing a decision tree algorithm using the selected predictors and the 2015 ROI polygons to determine the threshold values for each predictor. The specific predictors (channels/bands) selected through visual assessment of boxplots from the 2015 image statistics of Landsat-8/PALSAR-2 were as follows (Figs.S1-S4 in the paper):
+    + HH: vegetation; non-vegetation
+    + B4: shrubs/orchards; mangroves/rubber/oil palm; forest
+    + B5: oil palm/rubber; mangroves
+    + B6: rubber; oil palm
+
+The following scripts were used for the decision tree and mask generation process. First, an R script was developed to generate the decision tree using the [`tree` package](https://cran.r-project.org/web/packages/tree/index.html) (Ripley 2017) in R software. The R script used the csv file containing the extracted 2015 image values of predictor variable layers for all ROI polygons as input data to produce tree dendrogram images and summary text files as outputs. Second, based on the tree dendrograms and summary text files, a simplified decision tree flowchart (Fig.S5 in the paper) was designed again using the yEd Graph Editor for easily depicting the decision tree with the predictor variable and corresponding thresholds for discriminating selected land cover types. Third, the binary mask layers were generated through a Google Earth Engine script using the information from the decision tree flowchart. Once the mask layers were produced, ROIs for the selected land cover types were delineated for classifying the 1995 image stack.
+
+	- Scripts: decision tree (R); decision tree flowchart (yEd); mask generation (GEE)
+
+
+
+
+
 
 #### Image Classification
 
 #### Sankey Diagram
+
+
+
+<a name="outputs"></a>
+## Outputs
+
+Extraction of Image Statistics
+1. csv files (note: extraction of image statistics done in GEE)
+2. boxplots showing distribution of backscatter/reflectance values per land cover type for each predictor variable
+
+Decision Tree and Mask Generation
+1. tree dendrogram images and summary text files
+2. decision tree flowchart
+
+
 
 <a name="citation"></a>
 ## Citation
