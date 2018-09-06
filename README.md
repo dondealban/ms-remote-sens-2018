@@ -28,7 +28,7 @@ The following scripts were used for implementing image processing, classificatio
 #### Overall Workflow
 The overall workflow figure (Fig.2 in the paper) was designed using the [yEd Graph Editor](https://www.yworks.com/products/yed) software, which uses an XML-based GraphML file format for graphs. The GraphML file used for generating the overall workflow figure is provided.
 
-![overall-workflow](https://github.com/dondealban/ms-remote-sens-2018/blob/master/figures/paper/De%20Alban%20et%20al_2018_Fig02_Workflow.jpg)
+![overall-workflow](https://github.com/dondealban/ms-remote-sens-2018/blob/master/figures/paper/De%20Alban%20et%20al_2018_Fig02_Workflow.jpg | height=500)
 
 	- Scripts: overall workflow (yEd)
 
