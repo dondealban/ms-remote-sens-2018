@@ -24,15 +24,19 @@ Robust quantitative estimates of land use and land cover change are necessary to
 ## Scripts
 The following scripts were used for implementing image processing, classification, and accuracy assessment processes; for executing functions and statistical tests; and generating figures.
 
-#### Image Statistics
-
 #### Overall Workflow
 The overall workflow figure (Fig.2 in the paper) was designed using the [yEd Graph Editor](https://www.yworks.com/products/yed) software, which uses an XML-based GraphML file format for graphs. The GraphML file used for generating the overall workflow figure is provided.
 
+#### Extraction of Image Statistics
+Once the image stacks of the combined Landsat and L-band SAR data and the regions-of-interest (ROI) polygons of land cover types were completed, the image values of all predictor variables (all data layers from the image stacks) within the delineated ROI polygons were extracted for backscatter/reflectance analysis. The image statistics were extracted using the [Google Earth Engine](https://earthengine.google.com) (Gorelick et al. 2017) platform and exported as csv files. The csv files were subsequently used as input data to generate box-whisker plots using [`ggplot2` package](https://ggplot2.tidyverse.org) (Wickham 2016) in [R software](https://www.r-project.org) (R Core Team, 2016) for the purpose visualising and analysing the distribution of SAR backscatter and Landsat TOA reflectance values for each predictor variable consisting of the image channels/bands, derived indices, and texture measures. Each boxplot showed land cover types (x-axis) against backscatter/reflectance/index values (y-axis) for each predictor variable.
+
+
 #### Decision Tree
-Two scripts are provided for the decision tree task. First, an R script was developed to generate the decision tree using the [`tree` package](https://cran.r-project.org/web/packages/tree/index.html) (Ripley 2017) in [R software](https://www.r-project.org) (R Core Team, 2016). The R script used a csv data file containing the extracted image values of predictor variable layers for all regions-of-interest (ROI) polygons as input data to produce tree dendrograms images and summary text files as outputs. Second, based on the tree dendrograms and summary text files, a simplified decision tree flowchart (Fig.S5 in the paper) was designed again using the [yEd Graph Editor](https://www.yworks.com/products/yed) for easily depicting the decision tree with the predictor variable and corresponding thresholds for discriminating selected land cover types.
+Two scripts are provided for the decision tree task. First, an R script was developed to generate the decision tree using the [`tree` package](https://cran.r-project.org/web/packages/tree/index.html) (Ripley 2017) in [R software](https://www.r-project.org) (R Core Team, 2016). The R script used a csv data file containing the extracted image values of predictor variable layers for all ROI polygons as input data to produce tree dendrograms images and summary text files as outputs. Second, based on the tree dendrograms and summary text files, a simplified decision tree flowchart (Fig.S5 in the paper) was designed again using the [yEd Graph Editor](https://www.yworks.com/products/yed) for easily depicting the decision tree with the predictor variable and corresponding thresholds for discriminating selected land cover types.
 
 #### Image Classification
+
+#### Sankey Diagram
 
 <a name="citation"></a>
 ## Citation
