@@ -35,10 +35,13 @@ Once the image stacks of the combined Landsat and L-band SAR data and the region
 
 #### Decision Tree and Mask Generation
 To aid in the delineation of ROIs to classify the 1995 image stack, binary mask layers were needed for two land cover types: oil palm and rubber. The mask layers for these two land cover types were generated--first through a visual evaluation of the boxplots to select predictor variables in which the two land cover types could be discriminated, and second by implementing a decision tree algorithm using the selected predictors and the 2015 ROI polygons to determine the threshold values for each predictor. The specific predictors (channels/bands) selected through visual assessment of boxplots from the 2015 image statistics of Landsat-8/PALSAR-2 were as follows (Figs.S1-S4 in the paper):
-    + HH: vegetation; non-vegetation
-    + B4: shrubs/orchards; mangroves/rubber/oil palm; forest
-    + B5: oil palm/rubber; mangroves
-    + B6: rubber; oil palm
+
+Predictor | Land Cover Type
+--------- | ----------------
+HH        | vegetation; non-vegetation
+B4        | shrubs/orchards; mangroves/rubber/oil palm; forest
+B5        | oil palm/rubber; mangroves
+B6        | rubber; oil palm
 
 The following scripts were used for the decision tree and mask generation process. First, an R script was developed to generate the decision tree using the [`tree` package](https://cran.r-project.org/web/packages/tree/index.html) (Ripley 2017) in R software. The R script used the csv file containing the extracted 2015 image values of predictor variable layers for all ROI polygons as input data to produce tree dendrogram images and summary text files as outputs. Second, based on the tree dendrograms and summary text files, a simplified decision tree flowchart (Fig.S5 in the paper) was designed again using the yEd Graph Editor for easily depicting the decision tree with the predictor variable and corresponding thresholds for discriminating selected land cover types. Third, the binary mask layers were generated through a Google Earth Engine script using the information from the decision tree flowchart. Once the mask layers were produced, ROIs for the selected land cover types were delineated for classifying the 1995 image stack.
 
