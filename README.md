@@ -69,9 +69,11 @@ The original accuracy assessments, including error matrices, overall accuracies,
 *Scripts:* [R script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/R/R_McNemarTest.LandsatSAR.R) for implementing McNemar's tests.
 
 #### 7. Change Analysis
-The mode-filtered land cover maps were used for constructing a cross-tabulation matrix to summarise the area and percentage of land cover change from 1995 to 2015 using the `Land Cover Change` function of the `Semi-Automatic Classification Plugin` in [QGIS](https://qgis.org/en/site/) software, which implements map comparison to calculate the difference between a reference and a new classification raster map. In addition, the change values from the cross-tabulation matrix were used to form a Sankey diagram using an [online generator](https://sankey.csaladen.es/#) to visualise the land cover transitions (Cuba 2015). 
+The mode-filtered land cover maps were used for constructing a cross-tabulation matrix to summarise the area and percentage of land cover change from 1995 to 2015 using the `Land Cover Change` function of the `Semi-Automatic Classification Plugin` in [QGIS](https://qgis.org/en/site/) software, which implements map comparison to calculate the difference between a reference and a new classification raster map. In addition, the change values from the cross-tabulation matrix were used to form a Sankey diagram using an [online generator](https://sankey.csaladen.es/#) to visualise the land cover transitions (Fig.4 in the paper; Cuba 2015).
 
-*Scripts:* [JSON script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/R/R_McNemarTest.LandsatSAR.R) for generating the Sankey diagram.
+![fig-04](https://github.com/dondealban/ms-remote-sens-2018/blob/master/figures/paper/De%20Alban%20et%20al_2018_Fig04_Sankey%20Diagram.jpg)
+
+*Scripts:* [JSON script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/JSON/Sankey%20Final.json) for generating the Sankey diagram.
 
 
 <a name="output_files"></a>
@@ -94,6 +96,7 @@ Accuracy Assessment
 1. summary text file containing results of McNemar's test
 2. Excel spreadsheet with unbiased accuracy estimates and confidence intervals
 
+Change Analysis
 
 
 <a name="citation"></a>
