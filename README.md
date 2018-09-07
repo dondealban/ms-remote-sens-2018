@@ -8,7 +8,7 @@ Combined Landsat and L-band SAR data improves land cover classification and chan
 - [Overview](#overview)
 - [Abstract](#abstract)
 - [Scripts](#scripts)
-- [Outputs](#output_files)
+- [Output Files](#output_files)
 - [Citation](#citation)
 - [License](#license)
 
@@ -98,6 +98,9 @@ The mode-filtered land cover maps were used for constructing a cross-tabulation 
 ***Change Analysis***
 1. [csv file](https://github.com/dondealban/ms-remote-sens-2018/tree/master/output%20csv%20tables/change%201995%202015) output of land cover change analysis
 2. output land cover change raster in TIF file format
+
+***Extras***
+- [QML files](https://github.com/dondealban/ms-remote-sens-2018/tree/master/qml) for displaying land cover and land cover change raster maps in QGIS.
 
 <a name="citation"></a>
 ## Citation
