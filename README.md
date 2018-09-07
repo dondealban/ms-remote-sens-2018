@@ -93,14 +93,14 @@ The mode-filtered land cover maps were used for constructing a cross-tabulation 
 
 ***Accuracy Assessment***
 1. summary [text file](https://github.com/dondealban/ms-remote-sens-2018/tree/master/output%20summary%20text%20files/mcnemar%20test) containing results of McNemar's test
-2. Excel spreadsheet with unbiased accuracy estimates and confidence intervals
+2. Excel [spreadsheet](https://github.com/dondealban/ms-remote-sens-2018/tree/master/xlsx%20spreadsheet) with unbiased accuracy estimates and confidence intervals
 
 ***Change Analysis***
 1. [csv file](https://github.com/dondealban/ms-remote-sens-2018/tree/master/output%20csv%20tables/change%201995%202015) output of land cover change analysis
 2. output land cover change raster in TIF file format
 
 ***Extras***
-- [QML files](https://github.com/dondealban/ms-remote-sens-2018/tree/master/qml) for displaying land cover and land cover change raster maps in QGIS.
+- [QML files](https://github.com/dondealban/ms-remote-sens-2018/tree/master/qml) for displaying land cover and land cover change raster maps in QGIS
 
 <a name="citation"></a>
 ## Citation
