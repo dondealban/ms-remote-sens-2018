@@ -59,6 +59,8 @@ The following scripts were used for the decision tree and mask generation proces
 #### 5. Image Classification
 Image classification was implemented for both 1995 and 2015 individual sensor data and combined sensor data using Google Earth Engine. Three scripts were prepared for each image data group to implement the Random Forests machine learning classifier: Set A 1995, Set A 2015, and Set B 2015; and in each script, classification is done for Landsat-only, SAR-only, and combined Landsat+SAR data. The scripts also implement calculation of texture measures for SAR data, image stacking, accuracy assessment, mode filtering of land cover maps, and exporting of both the output land cover rasters in TIF file format and computed image statistics for all ROI polygons over combined sensor data.
 
+![fig-03](https://github.com/dondealban/ms-remote-sens-2018/blob/master/figures/paper/De%20Alban%20et%20al_2018_Fig03_Land%20Cover%20Maps.jpg)
+
 *Scripts:* GEE scripts for executing image classification on [Set A 1995](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_SetA1995ALL.LandsatSAR.js), [Set A 2015](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_SetA2015ALL.LandsatSAR.js), and [Set B 2015](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_SetB2015ALL.LandsatSAR.js) image data groups; and a separate [script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_MaskClassified19952015Images.LandsatSAR.js) for masking classified land cover maps to exclude pixels outside of the study area in preparation for change analysis.
 
 #### 6. Accuracy Assessment
