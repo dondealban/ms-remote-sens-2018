@@ -80,15 +80,17 @@ The mode-filtered land cover maps were used for constructing a cross-tabulation 
 ## Output Files
 
 Extraction of Image Statistics
+------------------------------
 1. csv files (note: extraction of image statistics done in GEE)
 2. boxplots showing distribution of backscatter/reflectance values per land cover type for each predictor variable
 
 Decision Tree and Mask Generation
+=================================
 1. tree dendrogram images and summary text files
 2. decision tree flowchart
 
 Image Classification
-1. output land cover rasters in TIF file format
+1. output land cover rasters in TIF file format, including original, mode-filtered, and masked raster files
 2. computed image statistics for all ROI polygons over combined sensor data
 3. variable importance plots and summary text files
 
@@ -97,7 +99,8 @@ Accuracy Assessment
 2. Excel spreadsheet with unbiased accuracy estimates and confidence intervals
 
 Change Analysis
-
+1. csv file output of land cover change analysis in SCP plugin in QGIS
+2. output land cover change raster in TIF file format
 
 <a name="citation"></a>
 ## Citation
