@@ -79,24 +79,25 @@ The mode-filtered land cover maps were used for constructing a cross-tabulation 
 ## Output Files
 
 ***Extraction of Image Statistics***
-1. csv files (note: extraction of image statistics done in GEE)
-2. boxplots showing distribution of backscatter/reflectance values per land cover type for each predictor variable
+1. csv files containing extracted image statistics for [Set A 1995](https://github.com/dondealban/ms-remote-sens-2018/tree/master/output%20csv%20tables/set%20a%201995), [Set A 2015](https://github.com/dondealban/ms-remote-sens-2018/tree/master/output%20csv%20tables/set%20a%202015), and [Set B 2015](https://github.com/dondealban/ms-remote-sens-2018/tree/master/output%20csv%20tables/set%20b%202015) using ROI polygons over individual and combined sensor data
+csv files (note: extraction of image statistics done in GEE)
+2. boxplots showing distribution of backscatter/reflectance values per land cover type for each predictor variable for [Set A 1995 and 2015](https://github.com/dondealban/ms-remote-sens-2018/tree/master/figures/image%20statistics%20set%20a) and [Set B 2015](https://github.com/dondealban/ms-remote-sens-2018/tree/master/figures/image%20statistics%20set%20b)
 
 ***Decision Tree and Mask Generation***
-1. tree dendrogram images and summary text files
-2. decision tree flowchart
+1. tree [dendrograms](https://github.com/dondealban/ms-remote-sens-2018/tree/master/figures/decision%20tree) and summary [text files](https://github.com/dondealban/ms-remote-sens-2018/tree/master/output%20summary%20text%20files/decision%20tree)
+2. decision tree [flowchart](https://github.com/dondealban/ms-remote-sens-2018/blob/master/figures/paper/De%20Alban%20et%20al_2018_FigS5_Decision%20Tree.pdf)
 
 ***Image Classification***
 1. output land cover rasters in TIF file format, including original, mode-filtered, and masked raster files
-2. computed image statistics for all ROI polygons over combined sensor data
-3. variable importance plots and summary text files
+2. csv files containing extracted image statistics (see *Extraction of Image Statistics* above)
+3. variable importance [plots](https://github.com/dondealban/ms-remote-sens-2018/tree/master/figures/variable%20importance) and summary [text files](https://github.com/dondealban/ms-remote-sens-2018/tree/master/output%20summary%20text%20files/variable%20importance)
 
 ***Accuracy Assessment***
-1. summary text file containing results of McNemar's test
+1. summary [text file](https://github.com/dondealban/ms-remote-sens-2018/tree/master/output%20summary%20text%20files/mcnemar%20test) containing results of McNemar's test
 2. Excel spreadsheet with unbiased accuracy estimates and confidence intervals
 
 ***Change Analysis***
-1. csv file output of land cover change analysis in SCP plugin in QGIS
+1. [csv file](https://github.com/dondealban/ms-remote-sens-2018/tree/master/output%20csv%20tables/change%201995%202015) output of land cover change analysis
 2. output land cover change raster in TIF file format
 
 <a name="citation"></a>
