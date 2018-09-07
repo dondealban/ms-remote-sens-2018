@@ -57,15 +57,16 @@ The following scripts were used for the decision tree and mask generation proces
 *Scripts:* [R script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/R/R_DecisionTree.LandsatSAR.R) for implementing decision tree classifier; [yEd graphml](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/yEd/yEd_DecisionTree.LandsatSAR.graphml) for designing decision tree flowchart; [GEE script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_MaskGenerationFor1995ROI.LandsatSAR.js) for generating binary mask layers.
 
 #### 5. Image Classification
-Image classification was implemented for both 1995 and 2015 individual sensor data and combined sensor data using Google Earth Engine. Three scripts were prepared for each image data group to implement the Random Forests machine learning classifier: Set A 1995, Set A 2015, and Set B 2015; and in each script, classification is done for Landsat-only, SAR-only, and combined Landsat+SAR data. The scripts also implemented calculation of texture measures for SAR data, image stacking, accuracy assessment, mode filtering of land cover maps, and exporting of both the output land cover rasters in TIF file format (Fig.3 in the paper) and computed image statistics for all ROI polygons over combined sensor data. In addition, an R script using the [randomForest package](https://cran.r-project.org/web/packages/randomForest/index.html) in R software, particularly the mean decrease in accuracy (permutation importance), was executed to extract the important predictor variables contributing to improved accuracies of both individual and combined sensor data, in turn producing variable importance plots and summary text files as outputs.
+Image classification was implemented for both 1995 and 2015 individual sensor data and combined sensor data using Google Earth Engine. Three scripts were prepared for each image data group to implement the Random Forests machine learning classifier: Set A 1995, Set A 2015, and Set B 2015; and in each script, classification is done for Landsat-only, SAR-only, and combined Landsat+SAR data. The scripts also implemented calculation of texture measures for SAR data, image stacking, accuracy assessment, mode filtering of land cover maps, and exporting of both the output land cover rasters in TIF file format (Fig.3 in the paper) and computed image statistics for all ROI polygons over combined sensor data. In addition, an R script using the [`randomForest` package](https://cran.r-project.org/web/packages/randomForest/index.html) in R software, particularly the mean decrease in accuracy (permutation importance), was executed to extract the important predictor variables contributing to improved accuracies of both individual and combined sensor data, in turn producing variable importance plots and summary text files as outputs.
 
 ![fig-03](https://github.com/dondealban/ms-remote-sens-2018/blob/master/figures/paper/De%20Alban%20et%20al_2018_Fig03_Land%20Cover%20Maps.jpg)
 
 *Scripts:* GEE scripts for executing image classification on [Set A 1995](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_SetA1995ALL.LandsatSAR.js), [Set A 2015](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_SetA2015ALL.LandsatSAR.js), and [Set B 2015](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_SetB2015ALL.LandsatSAR.js) image data groups; and a separate [script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_MaskClassified19952015Images.LandsatSAR.js) for masking classified land cover maps to exclude pixels outside of the study area in preparation for change analysis; [R script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/R/R_RF.VariableImportance.LandsatSAR.R) for extracting variable importance from the Random Forests classifier.
 
 #### 6. Accuracy Assessment
+The original accuracy assessments, including error matrices, overall accuracies, user's and producer's accuracies, and f-scores, were implemented in Google Earth Engine, calculated based on pixel counts. From these results, the unbiased accuracy estimates and confidence intervals were calculated (Card 1982), following the good practice recommendations for assessing classification accuracies (Olofsson et al. 2014). The unbiased accuracy estimates and confidence intervals were calculated using Microsoft Excel. In addition, McNemar's tests were implemented to evaluate the statistical significance of the difference between the overall accuracies of classification results using the [`exact2x2` package](https://cran.r-project.org/web/packages/exact2x2/index.html) (Fay et al. 2017) in R software.
 
-
+*Scripts:* [R script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/R/R_DecisionTree.LandsatSAR.R) for implementing decision tree classifier;
 
 #### 7. Change Analysis
 
@@ -88,6 +89,10 @@ Image Classification
 1. output land cover rasters in TIF file format
 2. computed image statistics for all ROI polygons over combined sensor data
 3. variable importance plots and summary text files
+
+Accuracy Assessment
+1. summary text file containing results of McNemar's test
+2. Excel spreadsheet with unbiased accuracy estimates and confidence intervals
 
 
 
