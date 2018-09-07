@@ -75,30 +75,27 @@ The mode-filtered land cover maps were used for constructing a cross-tabulation 
 
 *Scripts:* [JSON script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/JSON/Sankey%20Final.json) for generating the Sankey diagram.
 
-
 <a name="output_files"></a>
 ## Output Files
 
-Extraction of Image Statistics
-------------------------------
+***Extraction of Image Statistics***
 1. csv files (note: extraction of image statistics done in GEE)
 2. boxplots showing distribution of backscatter/reflectance values per land cover type for each predictor variable
 
-Decision Tree and Mask Generation
-=================================
+***Decision Tree and Mask Generation***
 1. tree dendrogram images and summary text files
 2. decision tree flowchart
 
-Image Classification
+***Image Classification***
 1. output land cover rasters in TIF file format, including original, mode-filtered, and masked raster files
 2. computed image statistics for all ROI polygons over combined sensor data
 3. variable importance plots and summary text files
 
-Accuracy Assessment
+***Accuracy Assessment***
 1. summary text file containing results of McNemar's test
 2. Excel spreadsheet with unbiased accuracy estimates and confidence intervals
 
-Change Analysis
+***Change Analysis***
 1. csv file output of land cover change analysis in SCP plugin in QGIS
 2. output land cover change raster in TIF file format
 

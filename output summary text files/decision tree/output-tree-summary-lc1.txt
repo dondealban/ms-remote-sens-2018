@@ -1,0 +1,20 @@
+node), split, n, deviance, yval, (yprob)
+      * denotes terminal node
+
+ 1) root 3076 4215.0 EXC ( 0.56307 0.43693 )  
+   2) HH < -11.2758 1296  384.2 EXC ( 0.96605 0.03395 )  
+     4) HH < -13.8717 1129  184.7 EXC ( 0.98406 0.01594 ) *
+     5) HH > -13.8717 167  144.4 EXC ( 0.84431 0.15569 ) *
+   3) HH > -11.2758 1780 2075.0 INC ( 0.26966 0.73034 )  
+     6) HH < -4.13755 1442 1030.0 INC ( 0.11512 0.88488 )  
+      12) HH < -9.1997 177  239.9 INC ( 0.41243 0.58757 ) *
+      13) HH > -9.1997 1265  664.5 INC ( 0.07352 0.92648 ) *
+     7) HH > -4.13755 338  173.2 EXC ( 0.92899 0.07101 ) *
+
+Classification tree:
+tree(formula = factor(LC1) ~ HH, data = data.lc1)
+Number of terminal nodes:  5 
+Residual mean deviance:  0.4581 = 1407 / 3071 
+Misclassification error rate: 0.07607 = 234 / 3076 
+   1    2    4    5    3    6   12   13    7 
+1344   44   18   26  480  166   73   93   24 

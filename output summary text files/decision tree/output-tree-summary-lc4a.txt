@@ -1,0 +1,18 @@
+node), split, n, deviance, yval, (yprob)
+      * denotes terminal node
+
+1) root 559 774.90 RBM ( 0.49553 0.50447 )  
+  2) B6 < 0.162128 306 233.50 OPM ( 0.87255 0.12745 )  
+    4) B6 < 0.148435 185  30.68 OPM ( 0.98378 0.01622 ) *
+    5) B6 > 0.148435 121 147.30 OPM ( 0.70248 0.29752 ) *
+  3) B6 > 0.162128 253  84.22 RBM ( 0.03953 0.96047 )  
+    6) B6 < 0.174576 74  58.61 RBM ( 0.13514 0.86486 ) *
+    7) B6 > 0.174576 179   0.00 RBM ( 0.00000 1.00000 ) *
+
+Classification tree:
+tree(formula = factor(LC4) ~ B6, data = data.lc4)
+Number of terminal nodes:  4 
+Residual mean deviance:  0.4263 = 236.6 / 555 
+Misclassification error rate: 0.08766 = 49 / 559 
+  1   2   4   5   3   6   7 
+277  39   3  36  10  10   0 

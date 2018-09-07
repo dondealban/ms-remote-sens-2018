@@ -1,0 +1,34 @@
+MCNEMAR'S TESTS: CONSOLIDATED RESULTS
+
+USING ALL PREDICTOR VARIABLES
+SET A 1995: LANDSAT+SAR vs. LANDSAT
+
+	McNemar's Chi-squared test
+
+data:  mat01
+McNemar's chi-squared = 2, df = 1, p-value = 0.1573
+
+USING ALL PREDICTOR VARIABLES
+SET A 2015: LANDSAT+SAR vs. LANDSAT
+
+	McNemar's Chi-squared test
+
+data:  mat02
+McNemar's chi-squared = 28.9, df = 1, p-value = 7.621e-08
+
+USING ALL PREDICTOR VARIABLES
+SET B 2015: LANDSAT+SAR vs. LANDSAT
+
+	McNemar's Chi-squared test
+
+data:  mat03
+McNemar's chi-squared = 34.783, df = 1, p-value = 3.687e-09
+
+USING ALL PREDICTOR VARIABLES
+SET A 2015 vs SET B 2015: LANDSAT+SAR
+
+	McNemar's Chi-squared test
+
+data:  mat04
+McNemar's chi-squared = 3, df = 1, p-value = 0.08326
+
