@@ -8,7 +8,7 @@ Combined Landsat and L-band SAR data improves land cover classification and chan
 - [Overview](#overview)
 - [Abstract](#abstract)
 - [Scripts](#scripts)
-- [Outputs](#outputs)
+- [Outputs](#output_files)
 - [Citation](#citation)
 - [License](#license)
 
@@ -66,16 +66,16 @@ Image classification was implemented for both 1995 and 2015 individual sensor da
 #### 6. Accuracy Assessment
 The original accuracy assessments, including error matrices, overall accuracies, user's and producer's accuracies, and f-scores, were implemented in Google Earth Engine, calculated based on pixel counts. From these results, the unbiased accuracy estimates and confidence intervals were calculated (Card 1982), following the good practice recommendations for assessing classification accuracies (Olofsson et al. 2014). The unbiased accuracy estimates and confidence intervals were calculated using Microsoft Excel. In addition, McNemar's tests were implemented to evaluate the statistical significance of the difference between the overall accuracies of classification results using the [`exact2x2` package](https://cran.r-project.org/web/packages/exact2x2/index.html) (Fay et al. 2017) in R software.
 
-*Scripts:* [R script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/R/R_DecisionTree.LandsatSAR.R) for implementing decision tree classifier;
+*Scripts:* [R script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/R/R_McNemarTest.LandsatSAR.R) for implementing McNemar's tests.
 
 #### 7. Change Analysis
+The mode-filtered land cover maps were used for constructing a cross-tabulation matrix to summarise the area and percentage of land cover change from 1995 to 2015 using the `Land Cover Change` function of the `Semi-Automatic Classification Plugin` in [QGIS](https://qgis.org/en/site/) software, which implements map comparison to calculate the difference between a reference and a new classification raster map. In addition, the change values from the cross-tabulation matrix were used to form a Sankey diagram using an [online generator](https://sankey.csaladen.es/#) to visualise the land cover transitions (Cuba 2015). 
+
+*Scripts:* [JSON script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/R/R_McNemarTest.LandsatSAR.R) for generating the Sankey diagram.
 
 
-
-
-
-<a name="outputs"></a>
-## Outputs
+<a name="output_files"></a>
+## Output Files
 
 Extraction of Image Statistics
 1. csv files (note: extraction of image statistics done in GEE)
