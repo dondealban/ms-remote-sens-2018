@@ -87,7 +87,7 @@ The mode-filtered land cover maps were used for constructing a cross-tabulation 
 2. decision tree [flowchart](https://github.com/dondealban/ms-remote-sens-2018/blob/master/figures/paper/De%20Alban%20et%20al_2018_FigS5_Decision%20Tree.pdf)
 
 ***Image Classification***
-1. output land cover rasters in TIF file format, including original, mode-filtered, and masked raster files
+1. output [land cover rasters](https://doi.org/10.5281/zenodo.1410808) in TIF file format, including original, mode-filtered, and masked raster files [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1410808.svg)](https://doi.org/10.5281/zenodo.1410808)
 2. csv files containing extracted image statistics (see *Extraction of Image Statistics* above)
 3. variable importance [plots](https://github.com/dondealban/ms-remote-sens-2018/tree/master/figures/variable%20importance) and summary [text files](https://github.com/dondealban/ms-remote-sens-2018/tree/master/output%20summary%20text%20files/variable%20importance)
 
@@ -97,7 +97,7 @@ The mode-filtered land cover maps were used for constructing a cross-tabulation 
 
 ***Change Analysis***
 1. [csv file](https://github.com/dondealban/ms-remote-sens-2018/tree/master/output%20csv%20tables/change%201995%202015) output of land cover change analysis
-2. output land cover change raster in TIF file format
+2. output [land cover change raster](https://doi.org/10.5281/zenodo.1410808) in TIF file format [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1410808.svg)](https://doi.org/10.5281/zenodo.1410808)
 
 ***Extras***
 - [QML files](https://github.com/dondealban/ms-remote-sens-2018/tree/master/qml) for displaying land cover and land cover change raster maps in QGIS
