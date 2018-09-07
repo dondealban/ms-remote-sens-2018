@@ -32,6 +32,9 @@ The overall workflow figure (Fig.2 in the paper) was designed using the [yEd Gra
 
 *Scripts:* [yEd graphml](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/yEd/yEd_Workflow.LandsatSAR.graphml) for designing the overall workflow diagram.
 
+#### Creation of Landsat Image Composites
+Landsat image composites for 
+
 #### 2. Extraction of Image Statistics
 Once the image stacks of the combined Landsat and L-band SAR data and the regions-of-interest (ROI) polygons of land cover types were completed, the image values of all predictor variables (all data layers from the image stacks) within the delineated ROI polygons were extracted for backscatter/reflectance analysis. The image statistics were extracted using the [Google Earth Engine](https://earthengine.google.com) (Gorelick et al. 2017) platform and exported as csv files. The csv files were subsequently used as input data to generate box-whisker plots using [`ggplot2` package](https://ggplot2.tidyverse.org) (Wickham 2016) in [R software](https://www.r-project.org) (R Core Team 2016) for the purpose visualising and analysing the distribution of SAR backscatter and Landsat TOA reflectance values for each predictor variable consisting of the image channels/bands, derived indices, and texture measures. Each boxplot showed land cover types (x-axis) against backscatter/reflectance/index values (y-axis) for each predictor variable.
 
@@ -52,8 +55,17 @@ The following scripts were used for the decision tree and mask generation proces
 *Scripts:* [R script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/R/R_DecisionTree.LandsatSAR.R) for implementing decision tree classifier; [yEd graphml](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/yEd/yEd_DecisionTree.LandsatSAR.graphml) for designing decision tree flowchart; [GEE script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_MaskGenerationFor1995ROI.LandsatSAR.js) for generating binary mask layers.
 
 #### 4. Image Classification
+Image classification was implemented for both 1995 and 2015 individual sensor data and combined sensor data using Google Earth Engine. Three scripts were prepared for each image data group to implement the Random Forests machine learning classifier: Set A 1995, Set A 2015, and Set B 2015; and in each script, classification is done for Landsat-only, SAR-only, and combined Landsat+SAR data. The scripts also implement calculation of texture measures for SAR data, image stacking, accuracy assessment, mode filtering of land cover maps, and exporting of both the output land cover rasters in TIF file format and computed image statistics for all ROI polygons over combined sensor data.
 
-#### Sankey Diagram
+*Scripts:* GEE scripts for executing image classification on [Set A 1995](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_SetA1995ALL.LandsatSAR.js), [Set A 2015](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_SetA2015ALL.LandsatSAR.js), and [Set B 2015](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_SetB2015ALL.LandsatSAR.js) image data groups; and a separate [script](https://github.com/dondealban/ms-remote-sens-2018/blob/master/scripts/GEE/GEE_MaskClassified19952015Images.LandsatSAR.js) for masking classified land cover maps to exclude pixels outside of the study area in preparation for change analysis.
+
+#### 5. Accuracy Assessment
+
+
+
+#### 6. Change Analysis
+
+
 
 
 
@@ -67,6 +79,10 @@ Extraction of Image Statistics
 Decision Tree and Mask Generation
 1. tree dendrogram images and summary text files
 2. decision tree flowchart
+
+Image Classification
+1. output land cover rasters in TIF file format
+2. computed image statistics for all ROI polygons over combined sensor data
 
 
 
