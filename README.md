@@ -137,7 +137,7 @@ Fay, M.P. & Hunsberger, S.A. (2017) exact2x2: Exact Tests and Confidence Interva
 Liaw, A. & Wiener, M. (2014) randomForest: Breiman and Cutler’s random forests for classification and regression.
 
 <a name="olofsson_etal_2014"></a>
-Olofsson, P., Foody, G.M., Herold, M., Stehman, S.V., Woodcock, C.E. & Wulder, M.A. (2014) Good practices for estimating area and assessing accuracy of land change. *Remote Sensing of Environment*, 148, 42–57.
+Olofsson, P., Foody, G.M., Herold, M., Stehman, S.V., Woodcock, C.E. & Wulder, M.A. (2014) Good practices for estimating area and assessing accuracy of land change. *Remote Sensing of Environment*, 148, 42–57. [DOI](https://doi.org/10.1016/j.rse.2014.02.015)
 
 <a name="qgis_2017"></a>
 QGIS Development Team (2017) QGIS Geographic Information System. Open Source Geospatial Foundation Project.
