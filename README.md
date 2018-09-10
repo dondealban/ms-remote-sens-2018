@@ -131,25 +131,25 @@ De Alban, J.D.T., G.M. Connette, P. Oswald, E.L. Webb (2018). Combined Landsat a
 ## References
 
 <a name="fay_hunsberger_2017"></a>
-FAY, M.P. & HUNSBERGER, S.A. (2017) exact2x2: Exact Tests and Confidence Intervals for 2x2 Tables.
+Fay, M.P. & Hunsberger, S.A. (2017) exact2x2: Exact Tests and Confidence Intervals for 2x2 Tables.
 
 <a name="liaw_wiener_2014"></a>
-LIAW, A. & WIENER, M. (2014) randomForest: Breiman and Cutler’s random forests for classification and regression.
+Liaw, A. & Wiener, M. (2014) randomForest: Breiman and Cutler’s random forests for classification and regression.
 
 <a name="olofsson_etal_2014"></a>
-OLOFSSON, P., FOODY, G.M., HEROLD, M., STEHMAN, S.V., WOODCOCK, C.E. & WULDER, M.A. (2014) Good practices for estimating area and assessing accuracy of land change. *Remote Sensing of Environment*, 148, 42–57.
+Olofsson, P., Foody, G.M., Herold, M., Stehman, S.V., Woodcock, C.E. & Wulder, M.A. (2014) Good practices for estimating area and assessing accuracy of land change. *Remote Sensing of Environment*, 148, 42–57.
 
 <a name="qgis_2017"></a>
-QGIS DEVELOPMENT TEAM (2017) QGIS Geographic Information System. Open Source Geospatial Foundation Project.
+QGIS Development Team (2017) QGIS Geographic Information System. Open Source Geospatial Foundation Project.
 
 <a name="rcore_2016"></a>
-R CORE TEAM (2016) R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing, Vienna, Austria.
+R Core Team (2016) R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing, Vienna, Austria.
 
 <a name="ripley_2015"></a>
-RIPLEY, B. (2015) tree: Classification and Regression Trees.
+Ripley, B. (2015) tree: Classification and Regression Trees.
 
 <a name="wickham_2016"></a>
-WICKHAM, H. (2016) *ggplot2: Elegant Graphics for Data Analysis*, 1st ed. 2009. Corr. 3rd printing 2010 edition. Springer, Dordrecht, Netherlands.
+Wickham, H. (2016) *ggplot2: Elegant Graphics for Data Analysis*, 1st ed. 2009. Corr. 3rd printing 2010 edition. Springer, Dordrecht, Netherlands.
 
 <a name="license"></a>
 ## License
