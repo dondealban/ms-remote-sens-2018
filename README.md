@@ -10,6 +10,7 @@ Combined Landsat and L-band SAR data improves land cover classification and chan
 - [Scripts](#scripts)
 - [Output Files](#output_files)
 - [Citation](#citation)
+- [References](#references)
 - [License](#license)
 
 
@@ -125,6 +126,25 @@ De Alban, J.D.T., G.M. Connette, P. Oswald, E.L. Webb (2018). Combined Landsat a
 	pages = {306}
 }
 ```
+
+<a name="references"></a>
+## References
+
+FAY, M.P. & HUNSBERGER, S.A. (2017) exact2x2: Exact Tests and Confidence Intervals for 2x2 Tables.
+
+LIAW, A. & WIENER, M. (2014) randomForest: Breiman and Cutler’s random forests for classification and regression.
+
+OLOFSSON, P., FOODY, G.M., HEROLD, M., STEHMAN, S.V., WOODCOCK, C.E. & WULDER, M.A. (2014) Good practices for estimating area and assessing accuracy of land change. Remote Sensing of Environment, 148, 42–57.
+
+QGIS DEVELOPMENT TEAM (2018) QGIS Geographic Information System. Open Source Geospatial Foundation Project.
+
+R CORE TEAM (2016) R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing, Vienna, Austria.
+
+RIPLEY, B. (2015) tree: Classification and Regression Trees.
+
+WICKHAM, H. (2010) ggplot2: Elegant Graphics for Data Analysis1st ed. 2009. Corr. 3rd printing 2010 edition. Springer, Dordrecht, Netherlands.
+
+
 
 <a name="license"></a>
 ## License
