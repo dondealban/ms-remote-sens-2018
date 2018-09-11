@@ -4,7 +4,7 @@ Combined Landsat and L-band SAR data improves land cover classification and chan
 [![DOI](https://img.shields.io/badge/DOI-10.3390%2Frs10020306-blue.svg)](https://doi.org/10.3390/rs10020306)
 
 
-## Table of Contents
+## Table of Content
 - [Overview](#overview)
 - [Abstract](#abstract)
 - [Scripts](#scripts)
